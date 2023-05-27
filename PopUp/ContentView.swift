@@ -22,10 +22,7 @@ struct ContentView: View {
             
             VStack {
                 Button(action: {
-                   withAnimation {
-                      isShowingPopup = true
-                   }
-                    
+                   isShowingPopup.toggle()
                 }) {
                     Text("Click here to reveal more text")
                 }
